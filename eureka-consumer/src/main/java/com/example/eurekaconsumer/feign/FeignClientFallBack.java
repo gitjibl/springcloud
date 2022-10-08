@@ -16,6 +16,6 @@ public class FeignClientFallBack implements TestFeign{
 
     @Override
     public String testFeign(String name) {
-        return "method invoke fail ";
+        return "Fallback相当于是降级操作 服务降级处理是在客户端实现完成的！"+name;
     }
 }

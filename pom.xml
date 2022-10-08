@@ -8,6 +8,8 @@
     <name>springcloud</name>
     <description>Demo project for Spring Boot</description>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>eureka-server</module>
         <module>zuul-server</module>
@@ -58,22 +60,6 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.7.RELEASE</version>
-                <configuration>
-                    <mainClass>com.example.springcloud.SpringcloudApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

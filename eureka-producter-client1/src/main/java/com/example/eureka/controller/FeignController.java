@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("feign")
 public class FeignController {
+
+
     @RequestMapping("test")
     public String test(String name){
         System.out.println("===================");

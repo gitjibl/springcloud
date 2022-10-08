@@ -14,6 +14,8 @@ zuul:
     producter-client1:
       path: /producter-client1/**
       service-id: eureka-producter
+      #url: http://127.0.0.1:8081/  #把包含path中的路径的请求跳转到url对应地址
+      #service-id: eureka-producter   #把包含path中的路径的请求跳转到对应服务
 #开启查看路由的端点
 management:
   endpoints:
